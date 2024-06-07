@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptes</title>
+    <link rel="stylesheet" href="recuperacio.css">
+</head>
+<body>
+    <div class="receptes">
+        <div class="ingredients">
+            <h2>Selecciona un ingredient: </h2>
+            <select id="ingredient" name="ingredient"> 
+                <h2>Selecciona un ingredient: </h2>
+                <option disabled selected>Ingredients Disponibles</option>
+                <option>Tomàquet</option>
+                <option>Formatge</option>
+                <option>Pollastre</option>
+                <option>Pebrot</option>
+                <option>Ceba</option>
+                <option>Olives</option>
+                <option>Enciam</option>
+            </select>
+            <button id="afegir-ingredient" type="button">Afegir</button>
+        </div>
+        <div class="botons">
+            <button id="cuinar-plat">Cuinar Plat</button>
+            <button id="reiniciar-cuina">Reiniciar Cuina</button>
+        </div>
+    </div>
+
+    <div>
+        <h1>Taula de preparacions</h1>
+        <div id="taula-preparacio"></div>
+    </div>
+    
+    <script>
+        const receptesMediterrania = [
+            {
+                nom: "Amanida Mediterrània",
+                ingredients: ["Tomàquet", "Enciam", "Olives", "Ceba"]
+            },
+            {
+                nom: "Pizza Margherita",
+                ingredients: ["Tomàquet", "Formatge", "Ceba"]
+            },
+            {
+                nom: "Pollastre amb Verdures",
+                ingredients: ["Pollastre", "Pebrot", "Ceba"]
+            },
+            {
+                nom: "Ensalada Caprese",
+                ingredients: ["Tomàquet", "Formatge", "Olives"]
+            }
+        ];
+
+        console.log(receptesMediterrania);
+    </script>
+    <script src="recuperacio.js"></script>
+</body>
+</html>

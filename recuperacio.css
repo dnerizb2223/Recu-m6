@@ -1,0 +1,20 @@
+.receptes{
+    display: inline-block;
+    width: 1000%;
+}
+
+.ingredients{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.botons{
+    right: 0;
+    width: 50%;
+}
+
+.botons button{
+    height: 50px;
+    width: 100px;
+}
